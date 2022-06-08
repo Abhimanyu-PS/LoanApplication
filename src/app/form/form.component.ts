@@ -14,8 +14,8 @@ export class FormComponent {
   heading:any;
   amount:any;
   btnname:any;
-  name:any;
 
+  name:any;
   resultamount:any;
 
   ngOnInit() {     
