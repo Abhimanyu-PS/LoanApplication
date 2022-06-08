@@ -10,11 +10,14 @@ export class FormComponent {
   constructor(private router:Router){}
 
   condition:boolean=false;
+
   heading:any;
   amount:any;
   btnname:any;
   name:any;
+
   resultamount:any;
+
   ngOnInit() {     
     this.heading = history.state.formname;
     this.amount = history.state.calculateformula;
