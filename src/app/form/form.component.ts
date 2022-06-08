@@ -9,6 +9,7 @@ export class FormComponent {
 
   constructor(private router:Router){}
 
+  condition:boolean=false;
   heading:any;
   amount:any;
   btnname:any;
@@ -21,6 +22,12 @@ export class FormComponent {
     console.log(this.heading);
     console.log(this.amount);
     console.log(this.btnname);
+  }
+
+  onChange(){
+    if((<HTMLInputElement>document.getElementById("inputsal")).value != null){
+      this.condition = true;
+    }
   }
   calculateRes(){
    this.resultamount = parseInt((<HTMLInputElement>document.getElementById("inputsal")).value) * parseInt(this.amount);
