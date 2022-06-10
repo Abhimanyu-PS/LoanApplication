@@ -27,10 +27,11 @@ export class FormComponent {
     console.log(this.btnname);
   }
 
-  onChange(){
-    if((<HTMLInputElement>document.getElementById("inputsal")).value != null){
+  onChange(e:any){
+    if(e.target.value != 0){
       this.condition = true;
     }
+    else this.condition = false;
   }
   calculateRes(){
    this.resultamount = parseInt((<HTMLInputElement>document.getElementById("inputsal")).value) * parseInt(this.amount);
