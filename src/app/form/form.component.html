@@ -59,6 +59,6 @@
       </div>
     </div>
     <input *ngIf="condition; else elseBlock" type="submit" class="btn btn-primary" (click)="calculateRes()" value={{btnname}}/>
-    <ng-template #elseBlock>Enter Salary and check the CheckBox to Continue</ng-template>
+    <ng-template #elseBlock><input type="submit" class="btn btn-secondary" value= "Enter Salary"/></ng-template>
     </form>
 </div>
